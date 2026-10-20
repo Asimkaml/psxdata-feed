@@ -16,7 +16,8 @@ from datetime import date, timedelta
 import numpy as np
 import pandas as pd
 
-USE_MOCK = os.getenv("PSX_MOCK", "").lower() in {"1", "true", "yes"}
+# USE_MOCK = os.getenv("PSX_MOCK", "").lower() in {"1", "true", "yes"}
+USE_MOCK = False
 SOURCE = "mock" if USE_MOCK else "live"
 
 # --------------------------------------------------------------------------
